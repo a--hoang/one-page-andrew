@@ -20,8 +20,22 @@ div.nav {
   color: #0098FF;
 }
 
+@font-face {
+    font-family: "ahoang";
+    src: url('/font/ahoang.ttf') format("truetype");
+}
+
+.bagtag {
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+}
+
 .content div.bagtag {
   margin-top: 6rem;
+}
+
+.content .bagtag .ahoang {
+  font-family: 'ahoang';
 }
 
 .content .bagtag #trapezoid {
@@ -37,12 +51,13 @@ div.nav {
 .content .bagtag #circle {
   width: 20px;
 	height: 20px;
-	background: #FFFFFF;
+	background: #BFBFBF;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
   margin: 0 auto;
   margin-top: 15px;
+  padding-top: 1px;
 }
 
 .content .bagtag #rectangle {
@@ -50,4 +65,28 @@ div.nav {
 	height: 350px;
 	background: #2B2B2B;
   margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 4px #BFBFBF;
+}
+
+.content .bagtag h6 {
+  margin-bottom: 0px;
+}
+
+.content .bagtag h5 {
+  margin-bottom: -5px;
+}
+
+.content .bagtag h2 {
+  margin-bottom: -8px;
+}
+
+.content .bagtag span {
+  display: block;
+}
+
+.content .bagtag hr.underline {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
