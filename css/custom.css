@@ -1,29 +1,21 @@
-html {
-  font-family: "Open Sans";
-  color: #FFFFFF;
+div.nav {
+  margin-top: 3rem;
 }
 
-body {
-  background-color: #212930;
+.nav hr {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  border-width: 0;
+  border-top: 2px solid #E1E1E1;
 }
 
-div.frame {
-  margin: 30px 30px;
-}
-
-.frame div.nav {
-  width: 30%;
-  min-width: 320px;
-
-}
-
-.frame .nav a {
+.nav a {
   display: block;
-  color: #FFFFFF;
+  color: #000000;
   text-decoration: none;
   font-size: 20px;
 }
 
-.frame .nav a:hover {
-  background-color: #61C666;
+.nav a:hover {
+  color: #0098FF;
 }
