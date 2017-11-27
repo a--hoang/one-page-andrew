@@ -86,6 +86,14 @@ div.nav {
   display: block;
 }
 
+.content .bagtag a {
+  color: #FFFFFF;
+}
+
+.content .bagtag #tagline {
+  margin: 20px 0px 0px 0px;
+}
+
 .content .bagtag hr.underline {
   margin-top: 0;
   margin-bottom: 10px;
