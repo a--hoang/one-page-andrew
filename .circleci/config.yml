@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7.10
+
+    working_directory: ~/one-page-andrew
+
+    steps:
+      - checkout
+
+      - deploy:
+          name: deploy-one-page-andrew
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              scp -o StrictHostKeyChecking=no -r ~/one-page-andrew/css circleci@${ANDREW_IP_ADDR}:/var/www/one-page-andrew/
+              scp -o StrictHostKeyChecking=no -r ~/one-page-andrew/font circleci@${ANDREW_IP_ADDR}:/var/www/one-page-andrew/
+              scp -o StrictHostKeyChecking=no -r ~/one-page-andrew/statics circleci@${ANDREW_IP_ADDR}:/var/www/one-page-andrew/
+              scp -o StrictHostKeyChecking=no -r ~/one-page-andrew/index.html circleci@${ANDREW_IP_ADDR}:/var/www/one-page-andrew/
+            fi
