@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "ahoang";
+  src: url('/font/ahoang.ttf') format("truetype");
+}
+
+body {
+  font-family: "ahoang";
+  font-size: 32px;
+}
